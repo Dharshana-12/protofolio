@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .skills button {
+            background-color: rgb(241, 241, 248);
+            color: rgb(2, 2, 2);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            position: relative;
+            animation: glitter 2s infinite;
+            box-shadow: 0 0 10px skyblue, 0 0 20px skyblue, 0 0 30px skyblue;
+        }
+
+        .skills button:hover {
+            background-color: rgb(249, 249, 253);
+        }
+
+        @keyframes glitter {
+            0%, 100% {
+                box-shadow: 0 0 10px skyblue, 0 0 20px skyblue, 0 0 30px skyblue;
+            }
+            50% {
+                box-shadow: 0 0 20px deepskyblue, 0 0 30px deepskyblue, 0 0 40px deepskyblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>DHARSHANA KANNAN</h1>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with a strong foundation in HTML, JavaScript, CSS, and Java. I love creating responsive and interactive websites that provide an excellent user experience. I am constantly learning new technologies and strive to enhance my skills to build innovative web applications.</p>
+           <br> <div class="skills">
+                <button>HTML</button>
+                <button>JavaScript</button>
+                <button>CSS</button>
+                <button>Java</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>MCQ Virtual Gaming</h3>
+                    <img src="mcq-gaming.jpg" alt="MCQ Virtual Gaming" style="width:100%; height:auto;">
+                    <p>This project involves a virtual gaming system that allows users to take part in multiple-choice question quizzes in a gamified environment. It offers a fun and engaging way to learn new topics, with real-time scoring, levels, and challenges to keep users motivated.</p>
+                </div>
+                <div class="project">
+                    <h3>Smart Irrigation System</h3>
+                    <img src="smart-irrigation.jpg" alt="Smart Irrigation System" style="width:100%; height:auto;">
+                    <p>The smart irrigation system automates the watering process based on real-time environmental data. It uses sensors to monitor soil moisture levels, temperature, and weather forecasts to efficiently manage water usage, making it ideal for both small gardens and large-scale farming.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:dharashana.k.cse.2022@snsce.ac.in">dharashana.k.cse.2022@snsce.ac.in</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/dharshana-kannan-dk" target="_blank">https://www.linkedin.com/in/dharshana-kannan-dk</a></p>
+            <!-- Add more contact options if needed -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dharshana Kannan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
